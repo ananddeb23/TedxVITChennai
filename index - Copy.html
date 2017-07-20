@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>TEDxVITChennai </title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  
+  <meta charset="utf-8">
+  <meta name="description" content="TEDx VITChennai is an independently organised TED event.">
+<meta name="keywords" content="TEDxVITC,TEDXVITCHENNAI,VITCTEDX,VITCCTEDX,VITCTED,VIT Chennai,VIT Chennai,TEDx Chennai,TED,TEDx">
+<meta name="author" content="Anand Shanker Deb">
+<meta name="author" content="LitSoc VITC">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #e62b1e;
+      color: #fff;
+      padding: 100px 25px;
+	  
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+	  
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #e62b1e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #e62b1e;
+      font-size: 175px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #e62b1e;
+  }
+  .carousel-indicators li {
+      border-color: #e62b1e;
+  }
+  .carousel-indicators li.active {
+      background-color: #e62b1e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #e62b1e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #e62b1e;
+      background-color: #fff !important;
+      color: #e62b1e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #e62b1e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #e62b1e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #e62b1e;
+      z-index: 9999;
+      
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-width:2px;
+      font-family: Montserrat, sans-serif;
+	  border-style: solid;
+    
+	  border-color:black;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #e62b1e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #e62b1e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+  
+  
+<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">TEDx<div style="display: inline-block; color:black;">VITChennai</div></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><a href="#speakers">SPEAKERS</a></li>
+		<li><a href="#about">ABOUT</a></li>
+		<li><a href="#rules">RULES</a></li>
+        <li><a href="#organising">ORGANIZING COMMITTE</a></li>
+        <li><a href="#partners">PARTNERS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+ 
+ 
+
+
+  <h1>TEDx<div style="display: inline-block; color:black;">VITChennai</div></h1> 
+  <p>Logo here or some tagline </p> 
+   
+</div>
+<div id="services" class="container-fluid text-center">
+
+  
+  <div id="getting-started" style="font-size:80px; font-family: Montserrat;color:#e62b1e;"></div>
+   <div id="getting-started" style="font-size:30px; font-family: Montserrat;color:e62b1e;"> DD HH:MM:SS</div>
+   <script type="text/javascript">
+  $("#getting-started")
+  .countdown("2017/01/17", function(event) {
+    $(this).text(
+      event.strftime('%Dd %H:%M:%S')
+    );
+  });
+</script>
+  <br>
+  <button type="button" class="btn btn-default btn-lg disabled" style="background:#e62b1e;width:200px;height:80px;z-index: 9999;
+      border: 0;
+      font-size: 18px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;color:white;">REGISTER</button>
+  <div class="row slideanim">
+   
+  </div>
+</div>
+<!-- Modals for the speakers -->
+<div id="myModal1" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+      <img src="sp_img1/i1.jpg" class="img-circle" alt="ROHINI RAU" width="175" height="175" align="center">
+	  </br>
+            <h4 class="modal-title" style="color:#e62b1e;"><center>R<div style="display: inline-block; color:white;">OHINI</div>  R<div style="display: inline-block; color:white;">AU</div></center></h4>
+	  </br>
+    </div>  
+  </div>
+        <p style="color:grey;font-family:Lucida Sans Unicode;font-size:12px;">Rohini Rau is of India's top sailors with her best World ISAF Ranking 94 and fifth in Asia. She created history, by winning India's first international gold medal by a women's youth team, at the Asian Sailing Championship in 2004; three months before graduating from school. She has participated in 8 World Championships and numerous international event, winning 6 international medals and 32 National Medals. </p>
+		 <p style="color:grey;font-family:Lucida Sans Unicode;font-size:12px;">She did her degree in MBBS at Chengalpet Govt Medical College. She also works as a mentor with Villgro, a Non-profit organisation that focuses on mentoring innovations that can change rural lives. She is the Outgoing Curator of the Chennai Hub Global Shapers Community, an initiative of the World Economic Forum, and a 2009 TEDIndia Fellow. In July 2015, she participated in IDDS (International Design Development Summit) in Chennai, where she was part of a team that was developing prototypes of 'Baby Tempit'. She has recently has been appointed to be part of the Global Shapers Alumni Advisory Council.</p>
+ </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal"><strong>X</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal2" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+      <img src="sp_img1/i2.jpg" class="img-circle" alt=" D.S. SUBRAMANIUM" width="175" height="175" align="center">
+	  </br>
+      <h4 class="modal-title" style="color:#e62b1e;"><center> D.S. SUBRAMANIUM</center></h4>
+	  </br>
+    </div>  
+  </div>
+        <p> A well respected entrepreneur and industrialist, is the Vice President of the Poultry Association of India (South Zone). He started his career as a food technology student and worked for the Oberoi Group before making his way into the poultry industry.  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal3" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+      <img src="sp_img1/i3.jpg" class="img-circle" alt="SUMIT D. CHOWDHURY" width="175" height="175" align="center">
+	  </br>
+      <h4 class="modal-title" style="color:#e62b1e;"><center>SUMIT D. CHOWDHURY</center></h4>
+	  </br>
+    </div>  
+  </div>
+        <p>An entrepreneur, business executive and best-selling author. He is the CEO and Founder of Gaia Smart Cities and has served as a President at Reliance Jio, Vice - President at IBM India and CIO at Reliance Communications in the past. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal4" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+      <img src="sp_img1/i4.jpg" class="img-circle" alt="NIPUN MALHOTRA" width="175" height="175" align="center">
+	  </br>
+      <h4 class="modal-title" style="color:#e62b1e;"><center>NIPUN MALHOTRA</center></h4>
+	  </br>
+    </div>  
+  </div>
+        <p> Is the co-founder and CEO of the Nipman Foundation, which works in the areas of Health, Dignity and Happiness for Persons with Disabilities. He is also the Executive Director at Nipman Fastener Industries, which is a leading automotive fastener manufacturing company in India. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal5" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+      <img src="sp_img1/i5.jpg" class="img-circle" alt="MEERA SHENOY" width="175" height="175" align="center">
+	  </br>
+      <h4 class="modal-title" style="color:#e62b1e;"><center>MEERA SHENOY</center></h4>
+	  </br>
+    </div>  
+  </div>
+        <p>A social change maker, is the founder of Youth4Jobs. She has dedicated her life to skilling underprivileged youth for jobs and works on policy, both with central and state governments.  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal6" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+      <img src="sp_img1/i6.jpg" class="img-circle" alt="VARUN JHAVERI" width="175" height="175" align="center">
+	  </br>
+      <h4 class="modal-title" style="color:#e62b1e;"><center>VARUN JHAVERI</center></h4>
+	  </br>
+    </div>  
+  </div>
+        <p> Appointed as UNESCO Youth Chair and Representative for the GAMAG division, has been associated with the work on education, gender rights, and media literacy as an active Youth Advocate. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal7" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+      <img src="sp_img1/i7.jpg" class="img-circle" alt="SATYA HINDUJA" width="175" height="175" align="center">
+	  </br>
+      <h4 class="modal-title" style="color:#e62b1e;"><center>S<div style="display: inline-block; color:white;">ATYA</div>  H<div style="display: inline-block; color:white;">INDUJA</div></center></h4>
+	  </br>
+    </div>  
+  </div>
+        <p style="color:grey;font-family:Lucida Sans Unicode;font-size:12px;">Satya Hinduja is a music producer, DJ and a composer. Her expansive career stretches from being a Disk Jockey in Amsterdam to producing scores for Bollywood films as big as Fashion and Krrish, and has seen multiple collaborations with global artists. </p>
+		 <p style="color:grey;font-family:Lucida Sans Unicode;font-size:12px;">While her artistic footprint has evolved from eastern traditional to western electronica, her spiritual vision is shaped by the
+intermingling of the two. She is an artist who seeks to share beyond the confines of the tangible - an artist in the truest sense of the word. Satya believes that music has the power to influence beings at a higher, incorporeal level. She looks to revolutionize music by incorporating the neurobiological connection of music and the individual, approaching tones from a molecular level. She intends to use music as a meditation technique, to elevate consciousness and provide spiritual therapy.
+</p>
+ <p style="color:grey;font-family:Lucida Sans Unicode;font-size:12px;">Influenced by the music of her homeland, Satya has developed a 
+sound that is truly unique. She calls this Alchemic Electronica ™ - working with frequencies to provoke change in the human psyche. With her vast knowledge, experience of music and music theory, a wondrous new Universe is born.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal"><strong>X</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="speakers" class="container-fluid text-center">
+  <h1 style="color:#e62b1e;">SPEAKERS</h1>
+  
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4" data-toggle="modal" data-target="#myModal1">
+      <img src="sp_img/i1.jpg" class="img-circle" alt="ROHINI RAU" width="175" height="175">
+      <h4>ROHINI RAU</h4>
+      <p>Gold Medallist in the Asian Sailing Championships 2004</p>
+    </div>
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal2">
+      <img src="sp_img/i2.jpg" class="img-circle" alt="D.S. SUBRAMANIUM" width="175" height="175">
+      <h4> D.S. SUBRAMANIUM</h4>
+      <p>Entrepreneur and Industrialist</p>
+    </div>
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal3">
+      <img src="sp_img/i3.jpg" class="img-circle" alt="SUMIT D. CHOWDHURY" width="175" height="175">
+      <h4>SUMIT D. CHOWDHURY</h4>
+      <p>Entrepreneur, Business Executive & Best-Selling Author</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal4">
+      <img src="sp_img/i4.jpg" class="img-circle" alt="NIPUN MALHOTRA" width="175" height="175">
+      <h4>NIPUN MALHOTRA</h4>
+      <p>CEO of the Nipman Foundation</p>
+    </div>
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal5">
+      <img src="sp_img/i5.jpg" class="img-circle" alt="MEERA SHENOY" width="175" height="175">
+      <h4>MEERA SHENOY</h4>
+      <p>Social Change Maker</p>
+    </div>
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal6">
+      <img src="sp_img/i6.jpg" class="img-circle" alt="VARUN JHAVERI" width="175" height="175">
+      <h4 style="color:#303030;">VARUN JHAVERI</h4>
+      <p>UNESCO Youth Chair and Representative for the GAMAG division</p>
+    </div>
+	
+  </div>
+    <br><br>
+  <div class="row slideanim">
+  <div class="col-sm-4">
+      
+      
+    </div>
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal7">
+      <img src="sp_img/i7.jpg" class="img-circle" alt="SATYA HINDUJA" width="175" height="175" align="center">
+      <h4>SATYA HINDUJA</h4>
+      <p>Musician </p>
+    </div>
+    
+  </div>
+  <br><br>
+</div>
+
+<div id="about" class="container-fluid text-center">
+  
+  <h1 style="color:#e62b1e;">ABOUT</h1>
+ 
+  <br>
+   <div class="row ">
+    <div class="col-sm-3" style="background:white;color:black;margin:50px;">
+      
+      <h3>TED </h3>
+      <p>TED is a nonprofit devoted to Ideas Worth Spreading. It started in 1984 as a conference bringing together people from three major realms : Technology, Entertainment, Design. The main Idea was to change attitudes, lives and ultimately, the world.</p>
+    </div>
+    <div class="col-sm-3" style="background:grey;color:white; margin:50px;">
+      
+      <h3 style="color:white;">TEDx </h3>
+	  <p>The TEDx Program is designed to help communities, organizations and individuals to spark conversation and connection through local TED-like experiences. Although governed by the TED body, TEDx events are self-organized. (x=Independently organized event).</p>
+       </div>
+	   
+	    <div class="col-sm-3" style="background:#e62b1e;color:white;margin:50px">
+      
+      <h3 style="color:white;">TEDxVITChennai </h3>
+	  <p>TEDx VIT Chennai an independently organized TED event, operated under license from TED. It is part of the Anchor program. TEDxVITChennai  will take place on January 17th 2016.</p>
+	  </br></br> </div>
+    
+  </div>
+  <br><br>
+ 
+</div>
+
+<div id="rules" class="container-fluid bg-grey">
+	<h1 style="color:#e62b1e;" class="text-center">RULES</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+	
+      <br>
+      <h4><strong>MISSION:</strong> Our mission to organise VITC TEDx lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>One Must Follow:</strong> VIT insists Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="organising" class="container-fluid text-center">
+  
+  <h1 style="color:#e62b1e;">ORGANISING COMMITTE</h1>
+ 
+  <br>
+   <div class="row slideanim">
+    <div class="col-sm-4" data-toggle="modal" data-target="#myModal1">
+      <img src="og_img/i1.jpg" class="img-circle" alt="ROHINI RAU" width="175" height="175">
+      <h4>GOKUL NAIR </h4>
+      <p>CONVENER</p>
+    </div>
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal2">
+      <img src="og_img/i2.jpg" class="img-circle" alt="D.S. SUBRAMANIUM" width="175" height="175">
+      <h4>RAJDEEP MUKHERJEE </h4>
+      <p>CONVENER</p>
+    </div>
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal3">
+      <img src="og_img/i3.jpg" class="img-circle" alt="SUMIT D. CHOWDHURY" width="175" height="175">
+      <h4>DATTATREYA DATTA </h4>
+      <p>SPONSORSHIP HEAD</p>
+    </div>
+  </div>
+  <br><br>
+ 
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="partners" class="container-fluid text-center bg-grey">
+  
+  
+   <h1 style="color:#e62b1e;">PARTNERS</h1>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+	  <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+	  <h3>PLATINUM SPONSORS</h3>
+      
+    <div class="col-sm-4" >
+      <img src="spn_img/logistics.jpg" class="img-rounded" alt="RE LOGITICS" width="175" height="175">
+      <h4>RE LOGISTICS </h4>
+      
+    </div>
+    <div class="col-sm-4"  >
+      <img src="og_img/i2.jpg" class="img-rounded" alt="D.S. SUBRAMANIUM" width="175" height="175">
+      <h4>RAJDEEP MUKHERJEE </h4>
+     
+    </div>
+    <div class="col-sm-4"  >
+      <img src="og_img/i3.jpg" class="img-rounded" alt="SUMIT D. CHOWDHURY" width="175" height="175">
+      <h4>DATTATREYA DATTA </h4>
+      
+    </div>
+  
+      </div>
+      <div class="item">
+	    <h3>GOLD SPONSORS</h3>
+       <div class="row slideanim">
+    <div class="col-sm-4" >
+      <img src="spn_img/cs.png" class="img-rounded" alt="CHENNAI SILKS" width="175" height="175">
+      <h4>THE CHENNAI SILKS </h4>
+      
+    </div>
+    <div class="col-sm-4"  >
+      <img src="og_img/i2.jpg" class="img-rounded" alt="D.S. SUBRAMANIUM" width="175" height="175">
+      <h4>RAJDEEP MUKHERJEE </h4>
+      
+    </div>
+    <div class="col-sm-4"  >
+      <img src="og_img/i3.jpg" class="img-rounded" alt="SUMIT D. CHOWDHURY" width="175" height="175">
+      <h4>DATTATREYA DATTA </h4>
+    
+    </div>
+	
+  </div>
+        
+      </div>
+      <div class="item">
+       <h3>ACCOMODATION PARTNER</h3>
+       <div class="row slideanim">
+    <div class="col-sm-6" >
+      <img src="spn_img/days.jpg" class="img-rounded" alt="DAYS HOTEL" width="275" height="275">
+      <h4></h4>
+    </div>
+	<p></p>
+    <div class="col-sm-6"  >
+      </br></br>
+      <h1><strong>DAYS HOTEL </strong></h1>
+      
+    </div>
+    
+	
+  </div>
+      </div>
+	   <div class="item">
+       <h3>TRANSPORTATION PARTNER</h3>
+       <div class="row slideanim">
+    <div class="col-sm-6" >
+      <img src="spn_img/audi_png.png" class="img-rounded" alt="ROHINI RAU" width="275" height="275">
+      <h4></h4>
+    </div>
+    <div class="col-sm-6"  data-toggle="modal" data-target="#myModal2">
+      </br></br>
+      <h1><strong>AUDI </strong></h1>
+      
+    </div>
+    
+	
+  </div>
+      </div>
+	  <div class="item">
+       <h3>SOCIAL IMPACT PARTNER</h3>
+       <div class="row slideanim">
+    <div class="col-sm-6" >
+      <img src="spn_img/ti_png.png" class="img-rounded" alt="TFI" width="275" height="275">
+      <h4></h4>
+    </div>
+    <div class="col-sm-6"  >
+      
+      </br></br>
+      <h1><strong>TeachForIndia </strong></h1>
+      
+    </div>
+    
+	
+  </div>
+      </div>
+	  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+ 
+  <h1 style="color:#e62b1e;" class="text-center">CONTACT</h1></br>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> VIT Chennai, Tamil Nadu, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 2459871526</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> tedxvitemail@vit.ac.in</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+
+</script>
+ <script>
+      function initMap() {
+        var myCenter = new google.maps.LatLng(12.8409, 80.153);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:14,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQGdXk6BAcB3fza3wXluXTIU1KrfBDDOA&callback=initMap">
+    </script>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+	
+  </a>
+  <div class="row">
+    <div class="col-sm-4" >
+      <p>&copy;TEDxVITChennai 2017.</br> All Rights Reserved.</p>
+    </div>
+	 <div class="col-sm-4" >
+      <p>Designed and maintained by   Anand Shanker Deb</p>
+    </div>
+	 <div class="col-sm-4" >
+      <p>Organised by LitSoc VITCC &trade; </p>
+    </div>
+    </div>
+  
+  
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>TEDxVITChennai </title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  
+  <meta charset="utf-8">
+<title>TEDxVITChennai</title>
+<meta name="description" content="TEDxVITChennai is an independently organised TED event organised by the LitSoc VIT Chennai.">
+<meta name="keywords" content="TEDxVITC, TEDXVITCHENNAI, VITCTEDX, VITCCTEDX, VITCTED, VIT Chennai, VIT Chennai, TEDx Chennai, TED, TEDx">
+<meta name="author" content="Anand Shanker Deb">
+<meta name="author" content="LitSoc VITC">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #e62b1e;
+      color: #fff;
+      padding: 100px 25px;
+	  
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+	  
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #e62b1e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #e62b1e;
+      font-size: 175px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #e62b1e;
+  }
+  .carousel-indicators li {
+      border-color: #e62b1e;
+  }
+  .carousel-indicators li.active {
+      background-color: #e62b1e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #e62b1e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #e62b1e;
+      background-color: #fff !important;
+      color: #e62b1e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #e62b1e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #e62b1e;
+      color: #fff;
+  }
+   .navbar {
+      margin-bottom: 0;
+      background-color: white;
+      z-index: 9999;
+      color:#e62b1e;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-width:2px;
+      font-family: Montserrat, sans-serif;
+	  border-style: solid;
+      border-top:none;
+	  border-left:none;
+	  border-right:none;
+	  
+	  border-color:#e62b1e;
+  }
+  .navbar li a, .navbar .navbar-brand {
+     color: #e62b1e !important;
+	  
+  }
+  
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #e62b1e !important;
+      background-color: #e62b1e;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #e62b1e; !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #e62b1e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+	
+  }
+  </style>
+  
+  
+<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    <a class="navbar-brand" href="http://tedxvitc.com/"><img src="BlackText.png" width="260px" height="60px" style="margin-top:-20px;margin:left:-10px;" /></a>
+         
+
+	  </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><a href="#speakers"><div style="display: inline-block; ">S</div>PEAKERS</a></li>
+		<li><a href="about.html"><div style="display: inline-block; ">A</div>BOUT</a></li>
+		<li><a href="#rules"><div style="display: inline-block; ">R</div>ULES</a></li>
+        <li><a href="#organising"><div style="display: inline-block; ">O</div>RGANISING <div style="display: inline-block; ">C</div>OMMITTEE</a></li>
+        <li><a href="sponsors.html"><div style="display: inline-block; ">S</div>PONSORS</a></li>
+        <li><a href="#contact"><div style="display: inline-block; ">C</div>ONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div  style="height:200px;margin-top:35px;background:black;border-style: solid;border-color:#e62b1e;border-left:none;border-right:none;border-width:2px;">
+ 
+ 
+
+
+  <center><img src="BlackBG.png" width="40%" height="100%" style="margin-top:50px;"/></center>
+  
+ 
+   
+</div>
+<div id="services" class="container-fluid text-center">
+
+  
+  <center><div id="getting-startedremovetext" style="font-size:400%; font-family: Montserrat;color:#e62b1e;text-align:center;"></div></center>
+ 
+   <script type="text/javascript">
+  $("#getting-started")
+  .countdown("2016/12/30 20:00:00", function(event) {
+    $(this).text(
+      event.strftime('%DD %H:%M:%S')
+    );
+  });
+</script>
+ 
+  <h2>Venue</h2>
+  <h4 style="color:grey;">Auditorium, Floor VII, Academic Block I  </h4>
+  <h4 style="color:grey;"> VIT University Chennai
+ Vandalur-Kelambakkam Road,Chennai.</h4>
+ <h3>Tuesday, January 17 2017  8:00 AM.</h3></br>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf8uuhJUCJVvaJNM7TPRKbNGRmMAx1RlyWrKttCATZDxuhYRw/viewform" ><button type="button"  style="background:#e62b1e;width:200px;height:80px;z-index: 9999;
+      border: 0;
+      font-size: 18px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;color:white;" >REGISTER</button></a>
+	  
+	  
+  <div class="row slideanim">
+   
+  </div>
+</div>
+<!-- Modals for the speakers -->
+<div id="myModal1" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+      <center><img src="sp_img1/i11.jpg" class="img-circle" alt="ROHINI RAU" width="175" height="175" align="center"></center>
+	  </br>
+            <h4 class="modal-title" style="color:#e62b1e;"><center>R<div style="display: inline-block; color:white;">OHINI</div>  R<div style="display: inline-block; color:white;">AU</div></center></h4>
+	  </br>
+    </div>  
+  </div>
+        <p style="color:grey;font-size:12px;">Rohini Rau is one of India's top sailors with her best World ISAF Ranking 94 and fifth in Asia. She created history, by winning India's first international gold medal by a women's youth team, at the Asian Sailing Championship in 2004 three months before graduating from school. She has participated in 8 World Championships and numerous international event, winning 6 international medals and 32 National Medals. </p>
+		 <p style="color:grey;font-size:12px;">She did her degree in MBBS at Chengalpet Govt Medical College. She also works as a mentor with Villgro, a Non-profit organisation that focuses on mentoring innovations that can change rural lives. She is the Outgoing Curator of the Chennai Hub Global Shapers Community, an initiative of the World Economic Forum, and a 2009 TEDIndia Fellow. In July 2015, she participated in IDDS (International Design Development Summit) in Chennai, where she was part of a team that was developing prototypes of 'Baby Tempit'. She has recently has been appointed to be part of the Global Shapers Alumni Advisory Council.</p>
+ </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal"><strong>X</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal2" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+       <center><img src="sp_img1/i2.jpg" class="img-circle" alt=" D.S. SUBRAMANIAM" width="175" height="175" align="center"> </center>
+	  </br>
+            <h4 class="modal-title" style="color:#e62b1e;"><center>D.<div style="display: inline-block; color:white;">S.</div> </br> S<div style="display: inline-block; color:white;">UBRAMANIAM</div></center></h4>
+	  
+	  </br>
+    </div>  
+  </div>
+ <p style="color:grey;font-size:12px;">D.S. Subramaniam, a well respected entrepreneur and industrialist, is the Vice President of the Poultry Association of India (South Zone). Starting as a food technology student, he worked his way up in the industry. Scoring a job right after college, he went off a great start with the Oberoi Group as they ventured into the business of providing food in aircrafts. </p>
+	<p style="color:grey;font-size:12px;">Quitting this job, he turned a new leaf in his life. Following his heart, he turned towards the Poultry industry. He struggled his way through the industry, selling his family land and went back to his roots. As the business flourished, he set up an empire of himself and named his company after his sister.</p>	        
+<p style="color:grey;font-size:12px;">From travelling in flights to riding a bike in a village and going back to owing an empire in the Poultry industry, this man has seen it all. He made his name by following his heart and never questioning himself. We are honoured to introduce D.S. Subramaniam as a TEDxVITChennai Speaker.</p>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal"><strong>X</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal3" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+       <center><img src="sp_img1/i3.jpg" class="img-circle" alt="SUMIT D. CHOWDHURY" width="175" height="175" align="center"> </center>
+	  </br>
+	        <h4 class="modal-title" style="color:#e62b1e;"><center>S<div style="display: inline-block; color:white;">UMIT</div></br> C<div style="display: inline-block; color:white;">HOWDHURY</div></center></h4>
+	  
+     
+	  </br>
+    </div>  
+  </div>
+  <p style="color:grey;font-size:12px;">Sumit Chowdhury is an entrepreneur, business leader, investor, author and public speaker. He has a long list of accolades to his name. He received his education in prestigious institutes such as IIT Kanpur and Carnegie Mellon. He has a masters degree in Electronic and Communications Engineering and a PhD in management. Now, Sumit is the founder and CEO of Gaia Smart Cities, an M2M/IOT company focused on telecom and ICT solutions for smart cities.
+</p>
+<p style="color:grey;font-size:12px;">Sumit served as a President at Reliance Jio and as Vice-President and Partner of Global Business Services with IBM India. He has also been the interim Country Head of BearingPoint in Australia. He is also on the panel of Outstanding Speakers Bureau. Along with all these astonishing accomplishments in his pocket, he is also of the author of 'Rules of the Game:Discover, Learn , Invent The Art of Speeding Up Your Career' and many other research papers.</p>
+<p style="color:grey;font-size:12px;">Sumit presents the perfect example of people who achieve greatness through intelligence and hard work. In his field, he is considered a visionary and a pioneer. We are thoroughly delighted to announce Sumit D. Chowdhury as a TEDxVITChennai speaker.</p>
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal"><strong>X</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal4" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+       <center><img src="sp_img1/i41.jpg" class="img-circle" alt="NIPUN MALHOTRA" width="175" height="175" align="center"> </center>
+	  </br>
+	   <h4 class="modal-title" style="color:#e62b1e;"><center>N<div style="display: inline-block; color:white;">IPUN</div> </br> M<div style="display: inline-block; color:white;">ALHOTRA</div></center></h4>
+	  
+
+	  </br>
+    </div>  
+  </div>
+    <p style="color:grey;font-size:12px;">Nipun Malhotra, is the Executive Director at Nipman Fastener Industries- one of the leading automotive fastener manufacturing companies in India with clients like Hero MotoCorp, Yamaha and Renault Nissan. He is also the Co-Founder and Joint Managing Trustee of Nipman Foundation, a forum through which he advocates and lobbies for the needs of Persons with Disability. He is an activist, spreading his message - 'It’s Attitudes that Disable'.
+</p>
+<p style="color:grey;font-size:12px;">Nipun is a graduate in Economics from St. Stephen’s College and did his post-graduation from the Delhi School of Economics. Born with Arthrogryposis, a rare congenital disorder, he is on the board of Vishwas, a non-profit organisation working in the field of disability and development; and on the advisory panel of OML, ensuring the NH7 Weekender and other events are accessible to Persons with Disabilities.</p>
+<p style="color:grey;font-size:12px;">In the world with cut-throat competition and more than enough obstacles, Nipun has proved that you can do anything and everything if you’ve got heart. His activism also advocates standing up for what you believe in. It is our immense pleasure to add this gemstone to the TEDxVITChennai speaker’s panel.</p>    
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal"><strong>X</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal5" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+       <center><img src="sp_img1/i51.jpg" class="img-circle" alt="MEERA SHENOY" width="175" height="175" align="center"> </center>
+	  </br>
+	        <h4 class="modal-title" style="color:#e62b1e;"><center>M<div style="display: inline-block; color:white;">EERA</div>  S<div style="display: inline-block; color:white;">HENOY</div></center></h4>
+	  
+     
+	  </br>
+    </div>  
+  </div>
+  <p style="color:grey;font-size:12px;">Meera Shenoy is a social entrepreneur who is popularly known as the founder of Youth4Jobs. She has worked all her life skilling underprivileged youth, as it is her belief  that an organized sector job to one youth in a poor family takes the entire family out of poverty in a sustained manner. The Youth4Jobs foundation’s byline - ‘Inclusive workforce: motivate-train-place’ - is chosen so as to accurately represent the foundation’s work; which is trying to give the differently abled a sustainable livelihood and working with underprivileged youth in remote tribal and rural villages</p>
+<p style="color:grey;font-size:12px;">For six years, Meera served as the Executive Director of EGMM, Employment Generation and Marketing Mission, which identifies, motivates and enrolls unemployed rural youth and tribals into short duration training centres. The trainings allow for placements in sectors like construction, textiles, retail, sales and rural BPO. When she left the company in 2011, it had trained 2,20,000 youth with 70% placements. Her work was featured in Knowledge@Wharton and the Wall Street Journal. After EGMM, she worked as a consultant with the World Bank for two years after which she founded Youth4Jobs.</p>
+<p style="color:grey;font-size:12px;">For her remarkable work, Meera has won numerous awards such as the Manthan Award, NCPEDP-Shell Helen Keller Award, Vocational Excellence Award and many more. It is an honour beyond compare to present Meera Shenoy as a TEDxVITChennai speaker.</p>  
+
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal"><strong>X</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal6" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+       <center><img src="sp_img1/i61.jpg" class="img-circle" alt="Shruti Chaturvedi " width="175" height="175" align="center"> </center>
+	  </br>
+	        <h4 class="modal-title" style="color:#e62b1e;"><center>S<div style="display: inline-block; color:white;">HRUTI</div></br>  C<div style="display: inline-block; color:white;">HATURVEDI</div></center></h4>
+	  
+      
+	  </br>
+    </div>  
+  </div>
+    <p style="color:grey;font-size:12px;">Shruti Chaturvedi has a long list of achievements tagged along with her name. She is the founder of Chaaipani, an online platform to discover and share stories that matter. They amplify the voices of millions of people who are making the world a better place. She is also the Concept Manager at HR Milestone Forum. She is the wizard of Social Media Marketing. While holding the position at HR Milestone Forum, she was a marketing intern at Dexter Consultancy Pvt. Ltd and at a HR intern in The Coca-Cola Company. She has also worked as Marketing and PR Team Leader at AIESEC.</p>
+	 <p style="color:grey;font-size:12px;">Shruti has won awards proving her marketing expertise by Microsoft Vfest, Ahmedabad Mirror, Myntra and many more. She has had several publications in Youth Connect, including an open letter to the opposition of the 16th Lok Sabha, about their responsibility in a democracy. She was also featured in Ahmedabad Mirror for academic accomplishments along with high profile internships while studying.</p>
+	  <p style="color:grey;font-size:12px;">At 23, Shruti has financially adopted two children and takes care of their education and basic needs. </p>
+	  <p style="color:grey;ode;font-size:12px;">Shruti paints a perfect picture of socially and politically aware and conscientious youth. It is with utmost pleasure that we reveal Shruti Chaturvedi as a TEDxVITChennai speaker.</p>
+
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal"><strong>X</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal7" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+       <center><img src="sp_img1/i71.jpg" class="img-circle" alt="SATYA HINDUJA" width="175" height="175" align="center"> </center>
+	  </br>
+      <h4 class="modal-title" style="color:#e62b1e;"><center>S<div style="display: inline-block; color:white;">ATYA</div>  H<div style="display: inline-block; color:white;">INDUJA</div></center></h4>
+	  </br>
+    </div>  
+  </div>
+        <p style="color:grey;font-size:12px;">Satya Hinduja’s beginnings are seeded into the rich heritage of India’s west coast, sprouting and taking root in Mumbai's thriving Bollywood scene, earning her a solid foundation and respect for music on a production level. The next 12 years would see a great transformation in Satya, not only as a musical artist, but at an even deeper spiritual level. The journey has seen her go from scoring Indian films to collaborating with global contemporary artists and musicians, to underground DJ's. Whatever medium she presents, within lies a message for the soul. </p>
+		 <p style="color:grey;font-size:12px;">Influenced by the philosophies of Universal Sufism, Vedantic teachings and her knowledge of western electronic music, Satya developed a sound that is truly unique, she calls this ‘Alchemic Electronica™’. Working with frequencies to provoke change in the human psyche with her vast knowledge and experience of music and music theory, a wondrous new universe is born.
+</p>
+ <p style="color:grey;font-size:12px;">Using sound as the best tool for communication, her intentions lie in elevating the deep subconscious through her meditative project 'Alchemic Sonic Environment', an immersive nomadic spatial sound booth that caters to all of the body's senses. The experience combines the spiritual with the scientific and each multisensory site-specific performance is carefully tailored to fit the audience’s needs by tuning a range of variables; from structure to smell, light temperature, sound and space.</p>
+  <p style="color:grey;font-size:12px;">Satya is an artist who seeks to share beyond the confines of the tangible - an artist in the truest sense of the word – whose name literally means ‘truth’; and strives to offer exactly that."</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal"><strong>X</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal8" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content" style="background:black;color:white;">   
+      <div class="modal-body">
+	  </br></br>
+	 <div class="row slideanim">
+  <div class="col-sm-4">     
+    </div>
+    <div class="col-sm-4">
+       <center><img src="sp_img1/i8.jpg" class="img-circle" alt="ACHARYA" width="175" height="175" align="center"> </center>
+	  </br>
+      <h4 class="modal-title" style="color:#e62b1e;"><center>A<div style="display: inline-block; color:white;">BHISHEK</div></br>A<div style="display: inline-block; color:white;">CHARYA</div></center></h4>
+	  </br>
+    </div>  
+  </div>
+    <p style="color:grey;font-size:12px;">Abhishek Acharya goes by many names – entertainer, magician, illusionist – along with all these, he is also quite The Mentalist. His forte is card tricks and close-up magic. He was named TalentCult’s Artist of the Day and was one of the main attractions at the hugely popular Delhi Summer Festival 2016.</p>
+<p style="color:grey;font-size:12px;">Abhishek has made quite the name for himself in the world of magic and mind-reading. Unlike other magic artists, his magic spans over the genres of stage magic, mind reading, close-up magic and card magic. His persona fits words like multi-faceted and versatile. His performances are a sight to behold as he grows as an artist and a performer.
+</p>
+<p style="color:grey;font-size:12px;">So, get ready to be mystified by this incredible entertainer. We don’t really know if he can charm your socks off like Patrick Jane, but we suggest you hold on tight. We give you, the next speaker on TEDxVITChennai speaker’s panel, Abhishek Acharya.                        </p>    
+
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" style="background:#e62b1e;color:white;" data-dismiss="modal"><strong>X</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="speakers" class="container-fluid text-center">
+  <h1 style="color:#e62b1e;">SPEAKERS</h1>
+  
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4" data-toggle="modal" data-target="#myModal1">
+      <img src="sp_img/i11.jpg" class="img-circle" alt="ROHINI RAU" width="175" height="175">
+      <h4 style="margin-bottom:-5px;">ROHINI RAU</h4>
+      <p style="margin-top:1px;">Olympic Class Sailor, International Gold Medalist and Social Worker.</p>
+    </div>
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal2">
+      <img src="sp_img/i2.jpg" class="img-circle" alt="D.S. SUBRAMANIAM" width="175" height="175">
+      <h4 style="margin-bottom:-5px;"> D.S. SUBRAMANIAM</h4>
+        <p style="margin-top:1px;">Entrepreneur, Industrialist and Vice President, Poultry Association of India.</p>
+    </div>
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal3">
+      <img src="sp_img/i3.jpg" class="img-circle" alt="SUMIT D. CHOWDHURY" width="175" height="175">
+      <h4 style="margin-bottom:-5px;">SUMIT D. CHOWDHURY</h4>
+    
+	  <p style="margin-top:1px;">Entrepreneur, Business Executive & Best-Selling Author.</p>
+    </div>
+  </div>
+  
+  <div class="row slideanim">
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal4">
+      <img src="sp_img/i41.jpg" class="img-circle" alt="NIPUN MALHOTRA" width="175" height="175">
+      <h4 style="margin-bottom:-5px;">NIPUN MALHOTRA</h4>
+      <p style="margin-top:1px;">Executive Director, Nipman Fastener Industries. Activist and Social Worker.</p>
+    </div>
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal5">
+      <img src="sp_img/i51.jpg" class="img-circle" alt="MEERA SHENOY" width="175" height="175">
+      <h4 style="margin-bottom:-5px;">MEERA SHENOY</h4>
+      <p style="margin-top:1px;">Founder, Youth4Jobs Social change maker and Activist.</p>
+    </div>
+    <div class="col-sm-4" data-toggle="modal" data-target="#myModal8">
+      <img src="sp_img/i8.jpg" class="img-circle" alt="ABHISHEK ACHARYA" width="175" height="175" align="center">
+      <h4 style="margin-bottom:-5px;">ABHISHEK ACHARYA</h4>
+      <p style="margin-top:1px;">Entertainer, Magician, Mentalist. </p>
+      
+    </div>
+	
+  </div>
+    
+  <div class="row slideanim">
+  <div class="col-sm-4" data-toggle="modal" data-target="#myModal6">
+     <img src="sp_img/i61.jpg" class="img-circle" alt="Shruti CHATURVEDI" width="175" height="175" align="center">
+      <h4 style="margin-bottom:-5px;">SHRUTI CHATURVEDI</h4>
+      <p style="margin-top:1px;">Marketing Expert  .</p>
+      
+    </div>
+    <div class="col-sm-4"  data-toggle="modal" data-target="#myModal7">
+      <img src="sp_img/i71.jpg" class="img-circle" alt="SATYA HINDUJA" width="175" height="175" align="center">
+      <h4 style="margin-bottom:-5px;">SATYA HINDUJA</h4>
+      <p style="margin-top:1px;">Independent Electronica Artist and Creator Of The ALCHEMIC SONIC ENVIRONMENT &trade; .</p>
+    </div>
+	<div class="col-sm-4" data-toggle="modal" data-target="#myModal8">
+      
+      
+    </div>
+    
+  </div>
+  <br><br>
+</div>
+
+<div id="about" class="container-fluid text-center">
+  
+  
+ 
+  <br>
+   <div class="row " style=";">
+   <h1 style="color:#e62b1e;">ABOUT TEDx</h1>
+     <div class="col-sm-12" style="background:white;color:grey;">
+    
+      <a href="http://www.ted.com/about/programs-initiatives/tedx-program"><h3 style="color:grey;">TEDx </h3></a>
+	  <p>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)</p>
+       </div>
+	   <div class="row slideanim">
+    <a href="about.html" ><button type="button"  style="background:#e62b1e;width:200px;height:80px;z-index: 9999;
+      border: 0;
+      font-size: 18px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;color:white;" >MORE</button></a>
+    
+  </div>
+  </div>
+  <br><br>
+ 
+</div>
+
+<div id="rules" class="container-fluid bg-grey">
+	<h1 style="color:#e62b1e;" class="text-center">RULES</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      <center><span class="glyphicon glyphicon-globe logo slideanim"></span></center>
+    </div>
+    <div class="col-sm-8">
+	
+      <br>
+      <h4>For the convenience of speakers and the audience, we require from you to follow these rules for a smooth event  </h4></br>
+	  <ul>
+	  <li>Please refrain from using mobile phones or other gadgets while inside the hall.</li>
+	  <li>Devices must be in switched off mode or in silent mode.</li>
+	  <li>Please do not leave the hall when a speaker is delivering his/her speech.</li>
+	  <li>Try not to leave the hall premises in between the duration of the event unless it is absolutely essential.</li>
+	  <li>Do not chew gum or consume edibles inside the hall premises.</li>
+	  <li>Please maintain general decorum and refrain from talking loudly or whistling before, after or during a speech.</li>
+	  </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="organising" class="container-fluid text-center">
+  
+  <h1 style="color:#e62b1e;">ORGANISED BY <h2 style="color:grey;">THE ENGLISH LITERARY ASSOCIATION</h2></h1>
+ 
+  <br>
+  <h4><p style="color:grey;">The English Literary Association or the LitSoc (Literary Society) is the representative body of VIT University for the proliferation of literature in all of its forms, which encompasses language in all its forms; written, oratory and unspoken. We at LitSoc believe firmly in the power of words and ideas; and this is why we are proud to present for the first time in VIT Chennai, a TED event. TEDxVITChennai, brought to you by the LitSoc.</p></h4>
+   <div class="row slideanim">
+    <a href="organising_committee.html" ><button type="button"  style="background:#e62b1e;width:200px;height:80px;z-index: 9999;
+      border: 0;
+      font-size: 18px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;color:white;" >THE TEAM</button></a>
+    
+  </div>
+  <br><br>
+ 
+</div>
+
+<!-- Container (Portfolio Section) -->
+
+
+<!-- Container (Pricing Section) -->
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+ 
+  <h1 style="color:#e62b1e;" class="text-center">CONTACT</h1></br>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> VIT Chennai, Tamil Nadu, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +919497454527,+9190929 74128</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> vitchennaitedx@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+
+</script>
+ <script>
+      function initMap() {
+        var myCenter = new google.maps.LatLng(12.8409, 80.153);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:14,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQGdXk6BAcB3fza3wXluXTIU1KrfBDDOA&callback=initMap">
+    </script>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+	
+  </a>
+   <p style="color:black;">This independent TEDx event is operated under license from TED.</p></br>
+  <div class="row">
+    <div class="col-sm-4" >
+      <p>&copy;TEDxVITChennai 2017.</br> All Rights Reserved.</p>
+    </div>
+	 <div class="col-sm-4" >
+      <p>Designed and maintained by   Anand Shanker Deb (a.SM)</p>
+    </div>
+	 <div class="col-sm-4" >
+      <p>Organised by LitSoc VITCC &trade; </p>
+    </div>
+    </div>
+  
+  
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
